@@ -26,7 +26,7 @@ describe('API Tests', () => {
     });
   });
 
-  it('GET /contacts - should return all contacts', async () => {
+  it('GET /contact - should return all contacts', async () => {
     const response = await request(app).get('/contacts');
     expect(response.statusCode).toBe(200);
     expect(response.body).toBeInstanceOf(Array);
