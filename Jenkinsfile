@@ -14,11 +14,7 @@ pipeline {
             }
         }
 
-        stage('Build') {
-            steps {
-                bat 'npm run build'
-            }
-        }
+
 
 
     }
