@@ -14,6 +14,12 @@ pipeline {
             }
         }
 
+
+
+
+
+    }
+    
 post {
     success {
         mail to: 'franklin.assogba12@gmail.com', subject: 'Build Succeeded', body: 'The build was a success.'
@@ -22,10 +28,5 @@ post {
         mail to: 'franklin.assogba12@gmail.com', subject: 'Build Failed', body: 'The build failed.'
     }
 }
-
-
-
-    }
-
 
 }
